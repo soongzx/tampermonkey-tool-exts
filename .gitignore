@@ -1,3 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -13,6 +24,9 @@ bin-release/
 *.ipa
 *.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Node modules (if using build tools)
+node_modules/
+
+# Build output
+dist/
+build/

@@ -12,22 +12,37 @@
 
 | 脚本 | 功能描述 | 匹配网站 |
 |------|----------|----------|
-| [DeepSeek 项目上下文与多文件管理助手](docs/deepseek-project-context-helper.md) | 自动注入全局提示词；多文件项目管理与上下文注入；代码块一键复制 | `chat.deepseek.com` |
+| [DeepSeek 助手增强面板](docs/deepseek-enhanced-panel.md) | 常用命令管理、代码块列表与快速定位、阅读进度条、数据导入导出 | `chat.deepseek.com` |
+| [通义千问助手增强面板](docs/qianwen-enhanced-panel.md) | 常用命令管理、代码块列表与快速定位、阅读进度条、数据导入导出 | `qianwen.com` |
 | [云学堂学习助手](docs/yunxuetang-learning-helper.md) | 自动播放课程、6 倍速播放、自动切换章节、防挂机检测 | `xuexi.yunxuetang.cn` |
 
 ## 快速开始
 
-### DeepSeek 项目上下文与多文件管理助手
+### DeepSeek 助手增强面板 (`scripts/deepseek-enhanced-panel.user.js`)
 
-专为 DeepSeek 网页版设计的辅助工具，解决以下痛点：
+DeepSeek 聊天页面的悬浮增强控制面板：
 
-- **全局提示词** - 每次问答自动带上你定义的上下文（类似 `/init`）
-- **多文件管理** - 在浏览器内管理项目文件，提问时自动注入文件结构和代码
-- **代码块复制** - 为 AI 回复的代码块添加一键复制按钮
+- **常用命令管理** - 添加、编辑、删除自定义命令，点击即可自动填入输入框
+- **代码块列表** - 自动扫描页面中所有代码块，点击可快速定位并高亮
+- **阅读进度条** - 页面顶部渐变色进度条，实时反映滚动阅读进度
+- **数据导入导出** - 支持命令数据导出为 JSON 文件备份，也可导入恢复
+- **悬浮面板** - 可拖拽移动，支持最小化/关闭
 
-[查看详细文档 →](docs/deepseek-project-context-helper.md)
+[查看详细文档 →](docs/deepseek-enhanced-panel.md)
 
-### 云学堂学习助手
+### 通义千问助手增强面板 (`scripts/qianwen-enhanced-panel.user.js`)
+
+通义千问聊天页面的悬浮增强控制面板（功能与 DeepSeek 版本一致，适配通义千问页面）：
+
+- **常用命令管理** - 添加、编辑、删除自定义命令，点击即可自动填入输入框
+- **代码块列表** - 自动扫描页面中所有代码块，点击可快速定位并高亮
+- **阅读进度条** - 页面顶部橙红色渐变进度条，实时反映滚动阅读进度
+- **数据导入导出** - 支持命令数据导出为 JSON 文件备份，也可导入恢复
+- **悬浮面板** - 可拖拽移动，支持最小化/关闭
+
+[查看详细文档 →](docs/qianwen-enhanced-panel.md)
+
+### 云学堂学习助手 (`scripts/yunxuetang-learning-helper.user.js`)
 
 云学堂自动学习辅助工具：
 
@@ -52,11 +67,13 @@
 ├── README.md              # 项目总览
 ├── LICENSE                # 开源许可证
 ├── scripts/               # 所有用户脚本
-│   ├── deepseek-project-context-helper.user.js
+│   ├── deepseek-enhanced-panel.user.js
+│   ├── qianwen-enhanced-panel.user.js
 │   ├── yunxuetang-learning-helper.user.js
 │   └── template.user.js   # 新脚本模板
 ├── docs/                  # 脚本详细文档
-│   ├── deepseek-project-context-helper.md
+│   ├── deepseek-enhanced-panel.md
+│   ├── qianwen-enhanced-panel.md
 │   └── yunxuetang-learning-helper.md
 └── assets/                # 资源文件
     └── screenshots/       # 脚本效果截图
